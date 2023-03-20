@@ -7,6 +7,8 @@ type Suggestion = {
   name: string;
 };
 
+type FullMentionData = any;
+
 type MentionData = {
   original: string;
   trigger: string;
@@ -47,7 +49,7 @@ type Position = {
 
 type MentionSuggestionsProps = {
   keyword: string | undefined;
-  onSuggestionPress: (suggestion: Suggestion) => void;
+  onSuggestionPress: (suggestion: Suggestion, mentionData: FullMentionData) => void;
 };
 
 type MentionPartType = {
@@ -114,4 +116,5 @@ export type {
   PatternPartType,
   PartType,
   MentionInputProps,
+  FullMentionData,
 };
