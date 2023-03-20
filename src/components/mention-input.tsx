@@ -74,7 +74,7 @@ const MentionInput: FC<MentionInputProps> = (
    * - Get updated value
    * - Trigger onChange callback with new value
    */
-  const onSuggestionPress = (mentionType: MentionPartType) => (suggestion: Suggestion, mentionData: FullMentionData) => {
+  const onSuggestionPress = (mentionType: MentionPartType) => (suggestion: Suggestion, mentionData?: FullMentionData) => {
     const newValue = generateValueWithAddedSuggestion(
       parts,
       mentionType,

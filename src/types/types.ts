@@ -49,7 +49,7 @@ type Position = {
 
 type MentionSuggestionsProps = {
   keyword: string | undefined;
-  onSuggestionPress: (suggestion: Suggestion, mentionData: FullMentionData) => void;
+  onSuggestionPress: (suggestion: Suggestion, mentionData?: FullMentionData) => void;
 };
 
 type MentionPartType = {
